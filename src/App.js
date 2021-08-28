@@ -1,18 +1,21 @@
 import { ThemeProvider } from "@material-ui/styles";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React from "react";
 import MyTheme from "./config/MyTheme";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import routes from "./config/Routes";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <ThemeProvider theme={MyTheme}>
       <Router>
-        <Switch>
-          {routes.map((route, i) => (
-            <RouteWithSubRoutes key={i} {...route} />
-          ))}
-        </Switch>
+        <Layout>
+          <Switch>
+            {routes.map((route, i) => (
+              <RouteWithSubRoutes key={i} {...route} />
+            ))}
+          </Switch>
+        </Layout>
       </Router>
     </ThemeProvider>
   );
