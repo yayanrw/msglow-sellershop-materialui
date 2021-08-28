@@ -7,8 +7,8 @@ import Category from "../pages/Category";
 const routes = [
   {
     path: "/",
-    component: Home,
-    
+    exact: true,
+    component: Login,
   },
   {
     path: "/login",
@@ -26,7 +26,7 @@ const routes = [
     path: "/cart",
     component: Cart,
   },
-  
+
   {
     path: "/account",
     component: Account,
