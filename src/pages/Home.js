@@ -1,5 +1,6 @@
 import React from "react";
 import Appbar from "../components/Appbar";
+import CategoryMenu from "../components/CategoryMenu";
 import SearchBar from "../components/SearchBar";
 
 function Home() {
@@ -7,6 +8,7 @@ function Home() {
     <div>
       <Appbar isLogo={true} color="inherit" />
       <SearchBar />
+      <CategoryMenu />
     </div>
   );
 }
