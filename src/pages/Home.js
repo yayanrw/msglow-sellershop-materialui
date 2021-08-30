@@ -1,10 +1,14 @@
-import { Typography } from "@material-ui/core";
 import React from "react";
+import Appbar from "../components/Appbar";
+import CategoryMenu from "../components/CategoryMenu";
+import SearchBar from "../components/SearchBar";
 
 function Home() {
   return (
     <div>
-      <Typography variant="h6">Im Home</Typography>
+      <Appbar isLogo={true} color="inherit" />
+      <SearchBar />
+      <CategoryMenu />
     </div>
   );
 }
