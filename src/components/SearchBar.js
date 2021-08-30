@@ -1,5 +1,5 @@
 import {
-  Divider,
+  Container,
   IconButton,
   InputBase,
   makeStyles,
@@ -7,7 +7,6 @@ import {
 } from "@material-ui/core";
 import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
-import DirectionsIcon from "@material-ui/icons/Directions";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
 function SearchBar() {
   const classes = useStyles();
   return (
-    <div>
+    <Container>
       <Paper component="form" className={classes.root}>
         <InputBase
           className={classes.input}
@@ -48,7 +47,7 @@ function SearchBar() {
           <SearchIcon />
         </IconButton>
       </Paper>
-    </div>
+    </Container>
   );
 }
 
