@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    color: "#fff",
+    textAlign: "center",
   },
   logo: {
     margin: "auto",
@@ -83,7 +85,13 @@ function Appbar(props) {
                 {title}
               </Typography>
             </Toolbar>
-          ) : null}
+          ) : (
+            <Toolbar>
+              <Typography variant="h6" className={classes.title}>
+                {title}
+              </Typography>
+            </Toolbar>
+          )}
         </AppBar>
       </ElevationScroll>
     </div>
