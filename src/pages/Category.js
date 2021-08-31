@@ -2,6 +2,7 @@ import { makeStyles } from "@material-ui/core";
 import React from "react";
 import Appbar from "../components/Appbar";
 import Banner from "../components/Banner";
+import CategoryList from "../components/CategoryList";
 import SearchBar from "../components/SearchBar";
 
 const useStyle = makeStyles((theme) => ({
@@ -22,6 +23,7 @@ function Category() {
         <SearchBar />
         <Banner elevation={3} />
       </div>
+      <CategoryList />
     </div>
   );
 }
