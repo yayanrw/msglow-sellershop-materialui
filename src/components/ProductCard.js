@@ -22,7 +22,7 @@ function ProductCard({ products }) {
   const classes = useStyles();
 
   return (
-    <Grid item xs={6}>
+    <Grid key={products.id} item>
       <Card className={classes.root} elevation={3}>
         <CardActionArea>
           <CardMedia
