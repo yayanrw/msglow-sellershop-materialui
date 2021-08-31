@@ -36,5 +36,79 @@
       "link": "/category/more",
       "icon": "BrokenImage"
     }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Acne Night Cream",
+      "price": "100000",
+      "image": "http://103.157.96.97/msglow-sellershop-ui/images/skincare/ACNE-NIGHT-CREAM.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Day Cream Square",
+      "price": "100000",
+      "image": "http://103.157.96.97/msglow-sellershop-ui/images/skincare/day-cream-square.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Deep Treatment Essence",
+      "price": "100000",
+      "image": "http://103.157.96.97/msglow-sellershop-ui/images/skincare/deep-treatment-essence.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Face Peel Scrub",
+      "price": "100000",
+      "image": "http://103.157.96.97/msglow-sellershop-ui/images/skincare/FACE-PEEL-SCRUB.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Facial Wash",
+      "price": "100000",
+      "image": "http://103.157.96.97/msglow-sellershop-ui/images/skincare/FACIAL-WASH.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Gold Serum",
+      "price": "100000",
+      "image": "http://103.157.96.97/msglow-sellershop-ui/images/skincare/gold-serum.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Night Cream Luminous",
+      "price": "100000",
+      "image": "http://103.157.96.97/msglow-sellershop-ui/images/skincare/LUMINOUS-NC.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Luminous Serum",
+      "price": "100000",
+      "image": "http://103.157.96.97/msglow-sellershop-ui/images/skincare/LUMINOUS-SERUM.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Peeling Serum",
+      "price": "100000",
+      "image": "http://103.157.96.97/msglow-sellershop-ui/images/skincare/peeling-serum.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Pore Away",
+      "price": "100000",
+      "image": "http://103.157.96.97/msglow-sellershop-ui/images/skincare/pore-away.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Radiance Gold Gel",
+      "price": "100000",
+      "image": "http://103.157.96.97/msglow-sellershop-ui/images/skincare/radiance-gold-gel.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Toner Acne",
+      "price": "100000",
+      "image": "http://103.157.96.97/msglow-sellershop-ui/images/skincare/TONER-ACNE.jpg"
+    }
   ]
 }
