@@ -41,7 +41,7 @@ function CategoryMenu() {
                 return (
                   <Grid key={index} item xs={4}>
                     <Paper elevation={0}>
-                      <Skeleton variant="rect" height={80} animation="wave" />
+                      <Skeleton variant="rect" height={90} animation="wave" />
                     </Paper>
                   </Grid>
                 );
