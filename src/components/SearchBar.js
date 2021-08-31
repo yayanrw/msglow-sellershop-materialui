@@ -10,7 +10,9 @@ import SearchIcon from "@material-ui/icons/Search";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: "72px",
+    paddingTop: "72px",
+  },
+  searchField: {
     marginBottom: "8px",
     padding: "2px",
     display: "flex",
@@ -33,8 +35,8 @@ const useStyles = makeStyles((theme) => ({
 function SearchBar() {
   const classes = useStyles();
   return (
-    <Container>
-      <Paper component="form" className={classes.root}>
+    <Container className={classes.root}>
+      <Paper component="form" className={classes.searchField}>
         <InputBase
           className={classes.input}
           placeholder="Search..."

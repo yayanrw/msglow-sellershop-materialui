@@ -4,37 +4,43 @@
       "id": "1",
       "name": "Skincare",
       "link": "/category/skincare",
-      "icon": "BrokenImage"
+      "icon": "BrokenImage",
+      "total_items": 9
     },
     {
       "id": "2",
       "name": "Bodycare",
       "link": "/category/bodycare",
-      "icon": "BrokenImage"
+      "icon": "BrokenImage",
+      "total_items": 3
     },
     {
       "id": "3",
       "name": "MS Slim",
       "link": "/category/msslim",
-      "icon": "BrokenImage"
+      "icon": "BrokenImage",
+      "total_items": 2
     },
     {
       "id": "4",
       "name": "Cosmetics",
       "link": "/category/cosmetics",
-      "icon": "BrokenImage"
+      "icon": "BrokenImage",
+      "total_items": 3
     },
     {
       "id": "5",
       "name": "Beauty Tools",
       "link": "/category/beautytools",
-      "icon": "BrokenImage"
+      "icon": "BrokenImage",
+      "total_items": 7
     },
     {
       "id": "6",
       "name": "More",
       "link": "/category/more",
-      "icon": "BrokenImage"
+      "icon": "BrokenImage",
+      "total_items": 3
     }
   ],
   "products": [

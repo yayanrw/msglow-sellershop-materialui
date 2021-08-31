@@ -39,7 +39,7 @@ const useStyle = makeStyles((theme) => ({
   },
 }));
 
-function Banner() {
+function Banner({ elevation }) {
   const classes = useStyle();
   const [loading, setLoading] = useState(true);
 
@@ -59,11 +59,11 @@ function Banner() {
           return (
             <ListItem key={index} className={classes.listItem}>
               {loading ? (
-                <Card className={classes.skeletonList} elevation={0}>
+                <Card className={classes.skeletonList} elevation={elevation}>
                   <Skeleton variant="rect" height={150} animation="wave" />
                 </Card>
               ) : (
-                <Card className={classes.cardList} elevation={0}>
+                <Card className={classes.cardList} elevation={elevation}>
                   <CardContent>
                     <Typography
                       variant="h6"

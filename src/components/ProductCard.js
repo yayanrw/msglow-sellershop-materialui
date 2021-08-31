@@ -31,7 +31,9 @@ function ProductCard({ products }) {
             title="Contemplative Reptile"
           />
           <CardContent>
-            <Typography variant="body1">Rp.{products.price}</Typography>
+            <Typography variant="body1">
+              Rp.{numberWithCommas(products.price)}
+            </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               {products.name}
             </Typography>
@@ -41,5 +43,9 @@ function ProductCard({ products }) {
     </Grid>
   );
 }
+
+const numberWithCommas = (x) => {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
 
 export default ProductCard;
