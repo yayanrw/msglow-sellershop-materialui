@@ -12,6 +12,7 @@ import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import { Link as LinkRoute } from "react-router-dom";
 
 function Copyright() {
   return (
@@ -43,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
+    color: "#fff",
   },
 }));
 
@@ -92,6 +94,8 @@ export default function Login() {
             variant="contained"
             color="primary"
             className={classes.submit}
+            component={LinkRoute}
+            to="/home"
           >
             Sign In
           </Button>
