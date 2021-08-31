@@ -21,7 +21,7 @@ function Home() {
       <Appbar isLogo={true} color="inherit" />
       <SearchBar />
       <CategoryMenu />
-      <Banner />
+      <Banner elevation={0} />
       <Divider style={{ height: "10px", marginBottom: "8px" }} />
       <ChipRecom />
       <ProductGrid />
