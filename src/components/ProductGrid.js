@@ -1,8 +1,9 @@
-import { Container, Grid, useMediaQuery } from "@material-ui/core";
+import { Card, Container, useMediaQuery } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import ApiUrl from "../config/AppConfig";
 import ProductCard from "./ProductCard";
 import Masonry from "react-masonry-css";
+import { Skeleton } from "@material-ui/lab";
 
 function ProductGrid() {
   const [products, setProducts] = useState([]);
@@ -30,9 +31,19 @@ function ProductGrid() {
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column"
       >
-        {products.map((products) => {
-          return <ProductCard key={products.id} products={products} />;
-        })}
+        {loading
+          ? Array(4)
+              .fill()
+              .map((item, index) => {
+                return (
+                  <Card key={index} elevation={3}>
+                    <Skeleton variant="rect" height={250} animation="wave" />
+                  </Card>
+                );
+              })
+          : products.map((products) => {
+              return <ProductCard key={products.id} products={products} />;
+            })}
       </Masonry>
     </Container>
   );
