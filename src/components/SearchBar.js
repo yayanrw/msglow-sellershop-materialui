@@ -10,7 +10,8 @@ import SearchIcon from "@material-ui/icons/Search";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: "56px",
+    marginTop: "72px",
+    marginBottom: "8px",
     padding: "2px",
     display: "flex",
     alignItems: "center",

@@ -12,19 +12,20 @@ import React from "react";
 
 const useStyle = makeStyles((theme) => ({
   root: {
+    paddingTop: "8px",
+    paddingBottom: "16px",
     display: "flex",
     flexDirection: "row",
-    padding: 0,
     overflowX: "scroll",
-    overflow: "hidden",
   },
   listItem: {
-    paddingRight: "0px",
+    padding: 0,
+    paddingLeft: "16px",
   },
   cardList: {
-    marginTop: "16px",
     width: "300px",
     margin: 0,
+    padding: 0,
     backgroundColor: theme.palette.primary.light,
   },
   title: {
@@ -41,7 +42,7 @@ function Banner() {
         .map((item, index) => {
           return (
             <ListItem key={index} className={classes.listItem}>
-              <Card className={classes.cardList}>
+              <Card className={classes.cardList} elevation={0}>
                 <CardContent>
                   <Typography
                     variant="h6"
