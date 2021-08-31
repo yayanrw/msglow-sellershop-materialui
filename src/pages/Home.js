@@ -3,7 +3,7 @@ import Appbar from "../components/Appbar";
 import CategoryMenu from "../components/CategoryMenu";
 import SearchBar from "../components/SearchBar";
 import Banner from "../components/Banner";
-import { Chip, Paper } from "@material-ui/core";
+import { Divider } from "@material-ui/core";
 import ChipRecom from "../components/ChipRecom";
 
 function Home() {
@@ -13,6 +13,7 @@ function Home() {
       <SearchBar />
       <CategoryMenu />
       <Banner />
+      <Divider style={{ height: "10px", marginBottom: "8px" }} />
       <ChipRecom />
     </div>
   );
