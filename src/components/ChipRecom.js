@@ -28,7 +28,12 @@ function ChipRecom() {
     <div className={classes.root + " hidescroll"}>
       {menu.map((item, index) => {
         return (
-          <Chip className={classes.chipList} label={item} onClick={() => {}} />
+          <Chip
+            key={index}
+            className={classes.chipList}
+            label={item}
+            onClick={() => {}}
+          />
         );
       })}
     </div>
