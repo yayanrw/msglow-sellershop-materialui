@@ -14,21 +14,23 @@ const useStyle = makeStyles((theme) => ({
   },
 }));
 
+const menu = [
+  "For you",
+  "Special discount",
+  "Best seller",
+  "For men",
+  "Beauty",
+];
+
 function ChipRecom() {
   const classes = useStyle();
   return (
-    <div className={classes.root}>
-      {Array(5)
-        .fill()
-        .map((item, index) => {
-          return (
-            <Chip
-              className={classes.chipList}
-              label={"Recommendation " + index}
-              onClick={() => {}}
-            />
-          );
-        })}
+    <div className={classes.root + " hidescroll"}>
+      {menu.map((item, index) => {
+        return (
+          <Chip className={classes.chipList} label={item} onClick={() => {}} />
+        );
+      })}
     </div>
   );
 }
