@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ApiUrl from "../config/AppConfig";
+import ApiUrl from "../../../config/AppConfig";
 import CategoryListItem from "./CategoryListItem";
 
 function CategoryList() {

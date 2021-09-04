@@ -1,6 +1,6 @@
 import { Box, Grid } from "@material-ui/core";
 import React from "react";
-import Appbar from "../components/Appbar";
+import Appbar from "../../components/Appbar";
 import { Skeleton } from "@material-ui/lab";
 
 function Cart() {

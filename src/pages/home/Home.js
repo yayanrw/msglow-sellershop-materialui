@@ -1,11 +1,11 @@
 import React from "react";
-import Appbar from "../components/Appbar";
-import CategoryMenu from "../components/CategoryMenu";
-import SearchBar from "../components/SearchBar";
-import Banner from "../components/Banner";
+import Appbar from "../../components/Appbar";
+import CategoryMenu from "../../components/CategoryMenu";
+import SearchBar from "../../components/SearchBar";
+import Banner from "../../components/Banner";
 import { Divider } from "@material-ui/core";
-import ChipRecom from "../components/ChipRecom";
-import ProductGrid from "../components/ProductGrid";
+import ChipRecom from "./components/ChipRecom";
+import ProductGrid from "./ProductGrid";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyle = makeStyles((theme) => ({

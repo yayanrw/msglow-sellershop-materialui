@@ -1,9 +1,9 @@
 import { makeStyles } from "@material-ui/core";
 import React from "react";
-import Appbar from "../components/Appbar";
-import Banner from "../components/Banner";
-import CategoryList from "../components/CategoryList";
-import SearchBar from "../components/SearchBar";
+import Appbar from "../../components/Appbar";
+import Banner from "../../components/Banner";
+import CategoryList from "./components/CategoryList";
+import SearchBar from "../../components/SearchBar";
 
 const useStyle = makeStyles((theme) => ({
   root: {

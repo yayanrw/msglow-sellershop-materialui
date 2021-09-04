@@ -1,6 +1,6 @@
 import { Card, Container, useMediaQuery } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
-import ApiUrl from "../config/AppConfig";
+import ApiUrl from "../../config/AppConfig";
 import ProductCard from "./ProductCard";
 import Masonry from "react-masonry-css";
 import { Skeleton } from "@material-ui/lab";
