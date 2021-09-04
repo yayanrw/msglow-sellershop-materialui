@@ -16,7 +16,7 @@ function CategoryList() {
         setLoading(false);
       }
       getCategory();
-    }, 5000);
+    }, 3000);
     return () => clearTimeout(timer);
   }, []);
 

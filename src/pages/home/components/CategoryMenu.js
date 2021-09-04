@@ -1,8 +1,8 @@
 import { Container, Grid, makeStyles, Paper } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
-import ApiUrl from "../config/AppConfig";
 import CategoryCard from "./CategoryCard";
 import { Skeleton } from "@material-ui/lab";
+import ApiUrl from "../../../config/AppConfig";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,7 +27,7 @@ function CategoryMenu() {
         setLoading(false);
       }
       getCategory();
-    }, 5000);
+    }, 3000);
     return () => clearTimeout(timer);
   }, []);
 

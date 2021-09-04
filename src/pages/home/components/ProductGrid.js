@@ -1,9 +1,9 @@
 import { Card, Container, useMediaQuery } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
-import ApiUrl from "../../config/AppConfig";
 import ProductCard from "./ProductCard";
 import Masonry from "react-masonry-css";
 import { Skeleton } from "@material-ui/lab";
+import ApiUrl from "../../../config/AppConfig";
 
 function ProductGrid() {
   const [products, setProducts] = useState([]);
@@ -20,7 +20,7 @@ function ProductGrid() {
         setLoading(false);
       }
       getCategory();
-    }, 5000);
+    }, 3000);
     return () => clearTimeout(timer);
   }, []);
 
