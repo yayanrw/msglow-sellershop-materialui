@@ -9,7 +9,7 @@ import React from "react";
 import MyTheme from "./config/MyTheme";
 import routes from "./config/Routes";
 import Layout from "./components/Layout";
-import Login from "./pages/Login";
+import Login from "./pages/login/Login";
 
 function App() {
   return (

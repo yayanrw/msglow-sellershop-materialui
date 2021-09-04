@@ -1,7 +1,7 @@
-import Home from "../pages/Home";
-import Cart from "../pages/Cart";
-import Account from "../pages/Account";
-import Category from "../pages/Category";
+import Home from "../pages/home/Home";
+import Category from "../pages/category/Category";
+import Cart from "../pages/cart/Cart";
+import Account from "../pages/account/Account";
 
 const routes = [
   {
